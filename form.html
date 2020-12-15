@@ -9,17 +9,29 @@
 </head>
 <body>
     <div class="box">
-         <form action="">
-             <input type="text" name="username" id= "User" placeholder="Username"><br>
+        <h1>Login Form</h1><br>
+         <form action="form.html" method="POST">
+             <input type="text" name="username" id="User" placeholder="Username"><br>
               <br>
                <input type="passwoard" name="pass" id="Pass" placeholder="passwoard"><br>
                 <br>
-                  <input type="submit" name="">
+                  <input type="submit" value="Login" id="Btn" onclick="validate()">
          </form>
    </div>
 
 
     <script>
+        function validate(){
+            var username=document.getElementById("User").Value;
+            var passwoard=docoment.getElementById("Pass").value;
+            if(username=="Admin" && passwoard=="user"){
+                alert("login sucess");
+                return false;
+            }
+            else{
+                alert("login fail");
+            }
+        }
     </script>
     
 </body>
