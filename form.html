@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="scriptt.js">
+    <script src="scriptt.js"></script>
+    <!-- <link rel="stylesheet" href="scriptt.js"> -->
 </head>
 <body>
         
-         <form action="form.html" method="POST" class="box">
+         <form action="login.html" onsubmit=" return Validate()" class="box">
              <h1>Login Form</h1><br>
              <input type="text" name="Username" id="User" placeholder="Username"><br>
               <br>
                <input type="passwoard" name="passwoard" id="Pass" placeholder="passwoard"><br>
                 <br>
-               <input type="submit" name="" id="Btn" Onclick="Validate()">
+                <button type="submit" id="Btn">Submit</button>
+               <!-- <input type="submit" name="" id="Btn" Onclick="Validate()"> -->
          </form>
    </div>
 </body>

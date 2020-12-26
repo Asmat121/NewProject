@@ -1,15 +1,15 @@
 
-    <script>
+   
     function Validate(){
-        var Username=document.getElementById("User").Value;
-        var passwoard=docoment.getElementById("Pass").value;
-        if(Username=="Admin" && passwoard=="user"){
-            alert("login sucess");
+        var Username=document.getElementById("User");
+        var passwoard=document.getElementById("Pass");
+        if(Username.value=="" || passwoard.value==""){
+            alert("no blanks values are allowed");
             return false;
         }
         else{
-            alert("login fail");
+            true;
+           
         }
     }
 
-    </script>

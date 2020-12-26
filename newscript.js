@@ -1,10 +1,13 @@
+
 function validate(){
-    var username=document.getElementById("username").Value;
+    var username=document.getElementById("username").value;
     var password=document.getElementById("password").value;
-    if(username=="Admin" && password=="user"){
-        alert("login sucess");
+    if(username=="as" && password=="12"){
+        alert("hi");
+        
+        return false;
     }
-    else{
-        alert("login fail");
-    }
+// //     else{
+// //         alert("login fail");
+// //     }
 }
