@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+	<form name="Calculator">
+		<input type="text" class="textbox" name="txt"><br>
+		<input type="button" name="btn9" value="9" onclick="dis(btn9.value)">
+		<input type="button" name="btn8" value="8" onclick="dis(btn8.value)">
+		<input type="button" name="btn7" value="7" onclick="dis(btn7.value)"><br>
+
+
+		<input type="button" name="btn6" value="6" onclick="dis(btn6.value)">
+		<input type="button" name="btn5" value="5" onclick="dis(btn5.value)">
+		<input type="button" name="btn4" value="4" onclick="dis(btn4.value)"><br>
+
+
+
+		<input type="button" name="btn3" value="3" onclick="dis(btn3.value)">
+		<input type="button" name="btn2" value="2" onclick="dis(btn2.value)">
+		<input type="button" name="btn1" value="1" onclick="dis(btn1.value)"><br>
+
+
+
+		<input type="button" name="btn0" value="0" onclick="dis(btn0.value)">
+		<input type="button" name="btnp" value="+" onclick="dis(btnp.value)">
+		<input type="button" name="btns" value="-" onclick="dis(btns.value)"><br>
+
+
+		<input type="button" name="btneq" value="=" onclick="txt.value=eval(txt.value)">
+		<input type="button" name="btnm" value="*" onclick="dis(btnm.value)">
+		<input type="button" name="btnd" value="/" onclick="dis(btnd.value)">
+	</form>
+</body>
+</html>
+<script type="">
+	function dis(x){
+		Calculator.txt.value=Calculator.txt.value+x;
+		
+
+	}
+</script>

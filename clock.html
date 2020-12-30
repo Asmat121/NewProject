@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="result"></div>
+	<!-- <button onclick="showDate()">Show Date</button> -->
+	<button onclick="showTime()">Show Time</button>
+	<!-- <button onclick="showHours()">show Hours</button>
+	<button onclick="showMinutes()">show Minutes</button>
+	<button onclick="showSeconds()">show seconds</button> -->
+
+
+
+</body>
+</html>
+<script type="">
+	// function showDate(){
+	// 	d=new Date();
+	// 	document.getElementById('result').innerText=d;
+
+	// }
+	function showTime(){
+		d=new Date();
+		document.getElementById('result').innerText=d.getTime();
+
+	}
+	// function showHours(){
+	// 	d=new Date();
+	// 	document.getElementById('result').innerText=d.getHours();
+
+	// }
+	// function showMinutes(){
+	// 	d=new Date();
+	// 	document.getElementById('result').innerText=d.getMinutes();
+
+	// }
+	// function showSeconds(){
+	// 	d=new Date();
+	// 	document.getElementById('result').innerText=d.getSeconds();
+
+	// }
+	function showTime(){
+		d=new Date();
+		h=document.getElementById('result').innerText=d.getHours();
+		m=document.getElementById('result').innerText=d.getMinutes();
+		s=document.getElementById('result').innerText=d.getSeconds();
+
+		
+
+
+		document.getElementById('result').innerText=h + ":"+ m +":"+s;
+
+	}
+	
+</script>
+<style type="">
+	#result{
+		border: turquoise;
+		background-color: peru;
+		color: white;
+		padding: 30px;
+		width:300px;
+		font-size: 20px;
+		margin-left: 200px;
+	}
+</style>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<img src="1.jpg" id="big"><br>
+	<img src="1.jpg" class="small" onclick="changeimge(0)">
+	<img src="2.jpg" class="small"onclick="changeimge(1)">
+	<img src="3.jpg" class="small"onclick="changeimge(2)">
+	<img src="4.jpg" class="small"onclick="changeimge(3)">
+	<img src="5.jpg" class="small"onclick="changeimge(4)">
+
+
+
+
+</body>
+</html>
+<style type="">
+	#big{
+		height: 600px;
+		width: 650px;
+		margin: 40px;
+	}
+	.small{
+		/*display: flex;*/
+		margin-left: 10px;
+		height: 150px;
+		width:200px;
+		cursor: pointer;
+	}
+</style>
+<script type="">
+	function changeimge(t) {
+		z=document.getElementsByClassName('small');
+		z[t]=0;
+		z[t].style.border="9px solid black";
+		document.getElementById('big').src=z[t].src;
+	}
+	
+</script>
